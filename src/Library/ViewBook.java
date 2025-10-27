@@ -8,11 +8,10 @@ import java.sql.*;
 public class ViewBook extends JFrame{
     
     String x[]={"Book ID","Book Name","Author","Quantity","Issued Books","Date"};
-    JButton bt;
     String y[][]=new String[20][6];
     int i=0,j=0;
     JTable t;
-    Font f1,f2;
+    Font f1;
     
     ViewBook()
     {

@@ -4,8 +4,8 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class Books extends JFrame implements ActionListener {
-    JLabel l1,l2,l3;
-    JButton b1,b2;
+    
+    
     JPanel p1,p2;
     Books()
     {

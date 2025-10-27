@@ -8,7 +8,7 @@ public class Librarian extends JFrame implements ActionListener{
     JLabel l1,l2,l3;
     JButton b1,b2;
     JPanel p1,p2;
-    JTextField t1,t2;
+    JTextField t1;
     JPasswordField pass;
     Font f1,f2;
     
@@ -81,7 +81,7 @@ public class Librarian extends JFrame implements ActionListener{
                 new Books().setVisible(true);
                 this.setVisible(false);
             } else {
-                // Login failed
+                
                 JOptionPane.showMessageDialog(null, "Name or Password incorrect");
                 t1.setText("");
                 pass.setText("");
@@ -95,6 +95,7 @@ public class Librarian extends JFrame implements ActionListener{
         if (e.getSource()==b2)
         {
             this.setVisible(false);
+            new Login().setVisible(true);
         }
     }
     public static void main(String[] args) {
